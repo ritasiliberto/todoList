@@ -3,7 +3,7 @@
 
     if (!isset($_POST['id']) || !isset($_POST['task']) || !isset($_POST['description'])) {
         echo json_encode(['error' => 'Missing data']);
-        exit;
+        return;
     }
 
     $id = (int)$_POST['id'];
